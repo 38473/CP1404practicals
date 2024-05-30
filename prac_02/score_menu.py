@@ -23,7 +23,7 @@ def main():
             print("Invalid choice")
         print(MENU)
         choice = input("Enter your choice: ").upper()
-    print("End!")
+    print("Thank you for your use! Goodbye!")
 
 
 def show_stars(score):
