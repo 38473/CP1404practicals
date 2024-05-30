@@ -19,6 +19,7 @@ def main():
 
 def generate_random_score():
     random_score = random.randint(0, 100)
+    # generate random score from 0 to 100
     return random_score
 
 
