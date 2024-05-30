@@ -1,0 +1,56 @@
+"""
+This program determines score status and prints stars as many as the score.
+"""
+MENU = ("(G)et a valid score (must be 0-100 inclusive)\n"
+        "(P)rint result (copy or import your function to determine the result from score.py)\n"
+        "(S)how stars (this should print as many stars as the score)\n"
+        "(Q)uit")
+
+
+def main():
+    score = None
+    print(MENU)
+    choice = input("Enter your choice: ").upper()
+    while choice != "Q":
+        if choice == "G":
+            score = get_valid_score()
+        elif choice == "P":
+            if score is not None:
+                result = output_result(score)
+                print(result)
+            else:
+                print("You need to get a valid score first.")
+        elif choice == "S":
+            if score is not None:
+                show_stars(score)
+            else:
+                print("You need to get a valid score first.")
+        else:
+            print("Invalid choice")
+        print(MENU)
+        choice = input("Enter your choice: ").upper()
+    print("End!")
+
+
+def show_stars(score):
+    print("*" * int(score))
+
+
+def output_result(score):
+    if score >= 90:
+        return "Excellent"
+    elif score >= 50:
+        return "Passable"
+    else:
+        return "Bad"
+
+
+def get_valid_score():
+    score = float(input("Enter score: "))
+    while score < 0 or score > 100:
+        print("Invalid score")
+        score = float(input("Enter score: "))
+    return score
+
+
+main()
