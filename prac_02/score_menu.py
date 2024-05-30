@@ -8,23 +8,17 @@ MENU = ("(G)et a valid score (must be 0-100 inclusive)\n"
 
 
 def main():
-    score = None
+    score = get_valid_score()
     print(MENU)
     choice = input("Enter your choice: ").upper()
     while choice != "Q":
         if choice == "G":
             score = get_valid_score()
         elif choice == "P":
-            if score is not None:
-                result = output_result(score)
-                print(result)
-            else:
-                print("You need to get a valid score first.")
+            result = output_result(score)
+            print(result)
         elif choice == "S":
-            if score is not None:
-                show_stars(score)
-            else:
-                print("You need to get a valid score first.")
+            show_stars(score)
         else:
             print("Invalid choice")
         print(MENU)
