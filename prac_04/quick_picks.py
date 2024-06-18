@@ -17,3 +17,4 @@ except SyntaxError:
     num_quick_picks = int(input("How many quick picks? "))
 except ValueError:
     num_quick_picks = int(input("How many quick picks? "))
+
