@@ -20,3 +20,4 @@ while state_code:
     state_code = input("Enter short state: ").strip().upper()
 for state_code in state_codes:
     print(f"{state_code:3} is {CODE_TO_NAME[state_code]}")
+

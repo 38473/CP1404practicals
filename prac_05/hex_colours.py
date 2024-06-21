@@ -17,4 +17,3 @@ while colour_name:
 for colour_name in colour_names:
     print(f"hex of {colour_name:16} is {HEX_TO_COLOURS[colour_name]}")
 
-
