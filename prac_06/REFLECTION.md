@@ -22,5 +22,6 @@ Improve the efficiency of my practical
 
 ## What is one request you have or change you suggest for this subject and/or your IT degree overall?
 
-I hope there will be more examples and the answers to the examples presented on the PPT, so that we can review them better
+I hope there will be more examples and the answers to the examples presented on the PPT, so that we can review them 
+better
 
