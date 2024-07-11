@@ -16,4 +16,3 @@ class ProgrammingLanguage:
     def __str__(self):
         """display the final result"""
         return f"{self.field}, {self.typing} Typing, Reflecting = {self.reflection}, First appeared in {self.year}"
-
