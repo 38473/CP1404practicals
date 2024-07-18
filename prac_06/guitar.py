@@ -18,4 +18,3 @@ class Guitar:
         """returns True if the guitar is 50 or more years old, False otherwise"""
         return self.get_age() >= 50
 
-
